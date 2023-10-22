@@ -4,120 +4,126 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #FDE5D4;
 }
-.container{
-    padding: 10px 10%; 
-}
-.nav-container{
-    background: #001524;
-    padding: 10px 10%;
-    width: 100%;
-    height: 100px;
-}
+
+/*--Header--*/
+
 nav{
     display: flex;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#logo{
-    margin: -130px 0;
-    width: 350px;
-    height: 350px;
+.nav-container{
+    background-color: coral;
+    width:100%; 
+    height: auto;
 }
-nav ul li{
+.nav-container img{
+    width: 250px;
+ margin: -55px 40px;   
+ height: 100%;
+}
+.nav-container ul li{
     display: inline-block;
     list-style: none;
-    margin: 30px 40px;
+    margin: 60px 80px;
 }
-nav ul li a{
+.nav-container ul li a{
     color: #fff;
     text-decoration: none;
-    position: relative;
     font-size: 18px;
+    position: relative;
 }
-nav ul li a::after{
+.nav-container ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background:	#D6CC99;
+    background: orangered;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover{
-    color: #D6CC99;
+.nav-container ul li a:hover{
+    color:orangered;
 }
-nav ul li a:hover::after{
+.nav-container ul li a:hover::after{
     width: 100%;
 
 }
-.content h1{
+
+/*--Landing Page--*/
+.image-container img{
+    width: 100%;
+    height: auto;
+    
+}
+.image-container{
+    position: relative;
+}
+.gradient-overlay{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-in {
+    animation: slideIn 1s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+.header-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text perfectly */
     text-align: center;
-    margin: 60px 0;
+}
+.header-text h1 {
+    color: #fff;
     font-size: 45px;
-    
+    font-weight: bold;
 }
-.content img{
-    width: 100%;
-    border: none;
-    border-radius: 6px;
-}
-.text-box p{
-    text-align: center;
-    margin-top: 25px;
-    font-size: 22px;
-    line-height: 45px;  
-    font-weight: 500;
-    font-style: italic; 
-    overflow: hidden;
-}
-#btn {
-    background: #001524;
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    margin: 40px auto;
-    display: block;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-#btn:hover{
-    background: #445D48;
-}
-#btn a {
+.header-text p{
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 10px 10px;
-    text-align: center;
-}
-.footer iframe{
-    width: 100%;
-    margin-top: 30px;
-    height: 20vh;
-}
-.footer-text-container{
-    background: #001524;
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.details{
-    display: inline-block;
-    margin: 20px 30px;
-    justify-content: space-between;
-    color: #fff;
-}
-.details i {
     font-size: 20px;
-    margin-right: 15px;
+}
+.button button{
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the button perfectly */
+    background: coral;
+    color: #fff;
+    padding: 15px 30px;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 250px;
+}
+
+.button button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.button button:hover {
+    background: orangered; /* Change background color on hover */
 }
