@@ -1,43 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" />
     <title>Template in portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3ce7561ef0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3ce7561ef0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--Header-->
     <div id="header">
-        <div class="nav-container">
-            <nav>
-                <img src="SSMimg/LOGO.png" alt="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="nav-container">
+        <nav>
+          <img src="SSMimg/LOGO.png" alt="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <!--Landing Picture-->
     <div id="Image">
-        <div class="image-container">
-            <img src="SSMimg/IMAGE.png" alt="image" class="slide-in">
-            <div class="gradient-overlay"></div>
-            <div class="header-text">
-                <h1>Welcome to Our Website</h1>
-                <p>We are the best in the world</p>
-            </div>
-            <div class="button">
-                <button type="button"><a href="">Contact Us</a></button>
-            </div>
+      <div class="image-container">
+        <img src="SSMimg/IMAGE.png" alt="image" class="slide-in" />
+        <div class="gradient-overlay"></div>
+        <div class="header-text">
+          <h1>Welcome to Our Website</h1>
+          <p>We are the best in the world</p>
         </div>
+        <div class="button">
+          <button type="button"><a href="">Contact Us</a></button>
+        </div>
+      </div>
     </div>
-</body>
+
+    <!--Content-->
+    <div id="services">
+      <h1>Services</h1>
+    </div>
+    <div id="video-text-section">
+      <div class="video-container">
+        <!-- Add your video here -->
+        <video controls>
+          <source src="SSMimg/Design.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text-container">
+        <h2>Video Title</h2>
+        <p>This is some text content describing the video.</p>
+      </div>
+    </div>
+    <div id="picture-text-section">
+      <div class="text-container">
+        <h2>Picture Title</h2>
+        <p>This is some text content describing the picture.</p>
+      </div>
+      <div class="picture-container">
+        <img src="SSMimg/beach.png" alt="picture" />
+      </div>
+    </div>
+    <div id="picture-text-section">
+      <div class="picture-container">
+        <img src="SSMimg/summer.png" alt="picture" />
+      </div>
+      <div class="text-container">
+        <h2>Picture Title</h2>
+        <p>This is some text content describing the picture.</p>
+      </div>
+    </div>
+
+    <!--About us-->
+    <div id="about-us">
+      <div class="title">
+        <h1>About Us</h1>
+      </div>
+      <div class="about-us-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam nulla
+          porttitor massa id neque aliquam vestibulum morbi. Mattis aliquam
+          faucibus purus in massa tempor nec feugiat nisl. Viverra justo nec
+          ultrices dui sapien eget mi. Mattis rhoncus urna neque viverra justo.
+          Tristique nulla aliquet enim tortor. Vitae tempus quam pellentesque
+          nec nam aliquam sem et. Et molestie ac feugiat sed lectus vestibulum
+          mattis. Congue eu consequat ac felis donec et. Fringilla urna
+          porttitor rhoncus dolor. Elementum tempus egestas sed sed risus
+          pretium.
+        </p>
+      </div>
+    </div>
+    <div class="button-2">
+      <button><a href="#">Learn More</a></button>
+    </div>
+
+    <!--Contact Us-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-container">
+            <div class="contact-left">
+              <h1 class="subTitle">Contact Us</h1>
+              <p><i class="fa-solid fa-envelope"></i>info@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>717-383-6163</p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your  Message"
+                ></textarea>
+                <button type="submit" class="btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @ Zeek's Portfolio. Made by Zeek</p>
+      </div>
+    </div>
+  </body>
 </html>
